@@ -63,8 +63,6 @@ try {
 
         // Align all frames to color viewport
         frameset = align_to_color->process(frameset);
-
-        get
         
         // Retrieve Color Flame
         color_frame = frameset.get_color_frame();
