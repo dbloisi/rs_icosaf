@@ -309,7 +309,7 @@ cv::Mat findHoles(cv::Mat img) {
     
     Mat img_gray;
     /// Convert image to gray and blur it
-    cvtColor(img, img_gray, CV_BGR2GRAY);
+    cvtColor(img, img_gray, COLOR_BGR2GRAY);
     blur(img_gray, img_gray, Size(3,3));
     
     Mat canny_output;
@@ -320,7 +320,7 @@ cv::Mat findHoles(cv::Mat img) {
     /// Detect edges using canny
     Canny(img_gray, canny_output, thresh, thresh*2, 3 );
     /// Find contours
-    findContours(canny_output, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0) );
+    findContours(canny_output, contours, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0) );
 
     /// Draw contours
     Mat drawing = Mat::zeros(canny_output.size(), CV_8UC3 );
