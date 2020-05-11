@@ -2,6 +2,8 @@
 
 ICOSAF PROJECT - realsense reader and visualizer
 
+[![rs_icosaf usage video](https://youtu.be/HIMIEOdsttU/0.jpg)](https://youtu.be/HIMIEOdsttU "ICOSAF - Realsense D435 test")
+
 Requires
 - [Intel® RealSense™ librealsense](https://github.com/IntelRealSense/librealsense)
 
